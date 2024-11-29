@@ -16,15 +16,14 @@ body {
   }
   
   .imagen-perfil img {
-    width: 100px;
-    height: 100px;
+    width: 125px;
     object-fit: cover;
-    margin-right: 20px;
+    margin-left: 20px;
     padding-top: 15px;
   }
   
   .informacion p {
-    margin: 5px 0;
+    margin: 5px 0 5px 20px;
     font-size: 11px;
     color: #ffffff; /* Texto blanco */
   }
@@ -134,6 +133,12 @@ button p {
   color: #0e0e0e;
 }
 
+.bg-head {
+    padding-top: 10px;
+    background-color: #0C8337;
+    height: 5%;
+}
+
 h1 {
   font-size: 25px;
   text-align: center;
@@ -146,6 +151,7 @@ h3 {
   font-size: 16px;
   color: #0e0e0e;
   padding-bottom: 10px;
+  border-color: #0C8337;
 }
 
 p {
