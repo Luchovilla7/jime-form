@@ -1,31 +1,19 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // Recibir los datos del formulario
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Obtiene los datos del formulario
     $nombre = htmlspecialchars($_POST['nombre']);
-    $correo = filter_var($_POST['correo'], FILTER_SANITIZE_EMAIL);
+    $email = htmlspecialchars($_POST['email']);
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
-    // Validar campos
-    if (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
-        die("El correo proporcionado no es válido.");
-    }
-
     // Configuración del correo
-    $destinatario = "jimenanabelchoke7@gmail.com"; // Reemplaza con tu correo
-    $contenido = "Has recibido un mensaje de contacto:\n\n";
-    $contenido .= "Nombre: $nombre\n";
-    $contenido .= "Correo: $correo\n\n";
-    $contenido .= "Mensaje:\n$mensaje\n";
+    $destinatario = "jimenaanabelchoke7@gmail.com"; // Cambiar por tu correo
+    $asunto = "Nuevo mensaje de $nombre";
+    $contenido = "Nombre: $nombre\nEmail: $email\nMensaje:\n$mensaje";
 
-    $headers = "From: $correo\r\n";
-    $headers .= "Reply-To: $correo\r\n";
+    // Enviar correo
+    $enviado = mail($destinatario, $asunto, $contenido);
 
-    // Enviar el correo
-    if (mail($destinatario, $contenido, $headers)) {
-        echo "Mensaje enviado con éxito.";
-    } else {
-        echo "Hubo un error al enviar el mensaje. Inténtalo más tarde.";
-    }
-} else {
-    echo "Acceso no permitido.";
+    // Respuesta en formato JSON
+    echo json_encode(['enviado' => $enviado]);
+    exit;
 }
