@@ -16,9 +16,9 @@ body {
   }
   
   .imagen-perfil img {
-    width: 125px;
+    width: 135px;
     object-fit: cover;
-    margin-left: 20px;
+    margin-left: 15px;
     padding-top: 15px;
   }
   
