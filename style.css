@@ -1,0 +1,172 @@
+/* Importación de fuentes de google fonts */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+body {
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #F7C749;
+}
+
+.portada {
+    display: flex;
+    align-items: center;
+    background-color: #0C8337; /* Fondo verde */
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .imagen-perfil img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    padding-top: 15px;
+  }
+  
+  .informacion p {
+    margin: 5px 0;
+    font-size: 11px;
+    color: #ffffff; /* Texto blanco */
+  }
+  
+  .informacion span {
+    font-weight: bold;
+  }
+  
+  .contact_form {
+    width: 480px;
+    margin: 80px auto;
+    border-radius: 10px;
+    background-color: #fbfbfb;
+    overflow: hidden; /* Para asegurar que los bordes redondeados se apliquen a la portada */
+  }
+  
+  .formulario {
+    padding: 20px 30px;
+  }
+  
+
+.div-img {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 80%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  align-items: center; /* Asegura que ambos estén centrados verticalmente */
+}
+
+.info p {
+  margin: 0 40px 0 0; /* Elimina los márgenes predeterminados de los párrafos */
+}
+
+.info span {
+  white-space: nowrap; /* Evita que el contenido del span se divida en varias líneas */
+}
+
+.contact_form {
+  width: 480px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 420px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0C8337;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 420px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0C8337;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #0C8337;
+  border-color: #0C8337;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+button p {
+  color: #fff;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: center;
+  color: #fff;
+  background-color: #0C8337;
+  border-radius: 10px 10px 0 0;
+}
+
+h3 {
+  font-size: 16px;
+  color: #0e0e0e;
+  padding-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #0C8337;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #0C8337;
+}
