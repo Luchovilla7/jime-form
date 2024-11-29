@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensaje = htmlspecialchars($_POST['mensaje']);
 
     // Configuración del correo
-    $destinatario = "jimenaanabelchoke7@gmail.com"; // Cambiar por tu correo
+    $destinatario = "chokejimenaanabel7@gmail.com"; // Cambiar por tu correo
     $asunto = "Nuevo mensaje de $nombre";
     $contenido = "Nombre: $nombre\nEmail: $email\nMensaje:\n$mensaje";
 

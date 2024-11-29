@@ -23,7 +23,7 @@ body {
   }
   
   .informacion p {
-    margin: 5px 0 5px 20px;
+    margin: 5px;
     font-size: 11px;
     color: #ffffff; /* Texto blanco */
   }
