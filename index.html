@@ -39,7 +39,7 @@
           <img src="logo.png" alt="logo de la providencia" />
         </div>
         <h3>Escríbeme y te responderé en la brevedad</h3>
-        <form id="contactForm">
+        <form id="contactForm" netlify>
           <p>
             <label for="nombre" class="colocar_nombre">
               Nombre <span class="obligatorio">*</span>
@@ -76,9 +76,7 @@
               placeholder="Deja aquí tu comentario..."
             ></textarea>
           </p>
-          <button type="reset" name="enviar_formulario" id="enviar">
-            <p>Enviar</p>
-          </button>
+          <input type="submit" class="button" name="enviar_formulario" id="enviar" value="Enviar">
           <p class="aviso">
             <span class="obligatorio"> * </span>los campos son obligatorios.
           </p>

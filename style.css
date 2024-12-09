@@ -109,7 +109,7 @@ label {
   float: center;
 }
 
-button {
+.button {
   height: 45px;
   padding-left: 5px;
   padding-right: 5px;
@@ -124,7 +124,7 @@ button {
   cursor: pointer;
 }
 
-button p {
+.button#enviar[value=Enviar] {
   color: #fff;
 }
 
